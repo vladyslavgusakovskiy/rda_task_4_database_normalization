@@ -45,9 +45,6 @@ INSERT INTO Countries (ID,Name)
 
 INSERT INTO Product (ID,ProductName)
    VALUES (1, 'AwersomeProduct');
-INSERT INTO Product (ID,ProductName)
-   VALUES (2, 'AwersomeProduct');
-
 
 INSERT INTO Warehouse (ID,WarehouseName,WarehouseAddress,CountryID)
    VALUES (1, 'Warehouse-1', 'City-1, Street-1', 1);
