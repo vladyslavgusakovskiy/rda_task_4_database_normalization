@@ -11,7 +11,7 @@ CREATE TABLE Countries (
 
 CREATE TABLE Product (
    ID INT,
-   ProductName VARCHAR(50),
+   ProductName VARCHAR(50) UNIQUE,
    PRIMARY KEY(ID)
 );
 
@@ -55,9 +55,9 @@ INSERT INTO Warehouse (ID,WarehouseName,WarehouseAddress,CountryID)
    VALUES (2, 'Warehouse-2', 'City-2, Street-2', 2);
 
 
-INSERT INTO ProductInventory (ID,WarehouseAmount,ProductID,WarehouseID)
+INSERT INTO ProductInventory (ID,WarehouseAmount,WarehouseID,ProductID)
    VALUES (1, 2, 1, 1);
-INSERT INTO ProductInventory (ID,WarehouseAmount,ProductID,WarehouseID)
+INSERT INTO ProductInventory (ID,WarehouseAmount,WarehouseID,ProductID)
    VALUES (2, 5 ,2, 2);
 
 
